@@ -17,9 +17,9 @@
         </form>
         <div><%= t.todo %>
           --
-          <%= t.done ? 'Done' : 'Not Done' %>
+          <%= t.done ? 'Read' : 'Not Read' %>
           <form action="/todos/<%= idx %>?_method=DELETE" method="POST">
-            <button type="submit" id="deletebtn">DELETE</button>
+            <button type="submit" id="deletebtn">X</button>
         </div><br>
       <% }) %>
       <% } else { %>
